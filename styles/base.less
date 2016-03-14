@@ -109,6 +109,15 @@ atom-text-editor .search-results .marker.current-result .region,
     color: @light-gray;
 }
 
+.storage.modifier {
+    color: @blue;
+}
+
+.support {
+    &.class.builtin {
+        color: @light-gray;
+    }
+}
 .constant {
   color: @green;
 
@@ -151,6 +160,10 @@ atom-text-editor .search-results .marker.current-result .region,
   &.this.js {
       color: @light-purple;
   }
+
+  &.scss {
+      color: @blue;
+  }
 }
 
 .invalid.illegal {
@@ -161,6 +174,9 @@ atom-text-editor .search-results .marker.current-result .region,
 .string {
   color: @green;
 
+  &.unquoted {
+      color: @bright-orange;
+  }
 
   &.regexp {
     color: @green;
