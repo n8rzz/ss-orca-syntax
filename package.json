@@ -1,0 +1,16 @@
+{
+  "name": "SS-Orca-Syntax",
+  "theme": "syntax",
+  "version": "0.2.0",
+  "description": "Customized port of the Acai ColorSublime SublimeText theme",
+  "keywords": [
+    "syntax",
+    "theme",
+    "atom"
+  ],
+  "repository": "https://github.com/atom/ss-orca-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
