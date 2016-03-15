@@ -63,7 +63,7 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .comment {
-  color: @light-gray;
+  color: @very-dark-yellow;
 }
 
 .keyword {
@@ -106,7 +106,7 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .storage.type.class,
 .storage.type.class.jsdoc {
-    color: @light-gray;
+    color: @very-dark-yellow;
 }
 
 .storage.modifier {
@@ -123,6 +123,10 @@ atom-text-editor .search-results .marker.current-result .region,
 
   &.character.escape {
     color: @green;
+  }
+
+  &.language.null {
+      color: @light-gray;
   }
 
   &.numeric {
@@ -150,7 +154,11 @@ atom-text-editor .search-results .marker.current-result .region,
   }
 
   &.other.property {
-      color: @white;
+      color: @light-gray;
+  }
+
+  &.other.object {
+      color: @syntax-text-color;
   }
 
   &.other.readwrite.js {
@@ -194,7 +202,7 @@ atom-text-editor .search-results .marker.current-result .region,
 .punctuation {
   &.definition {
     &.comment {
-      color: @light-gray;
+      color: @very-dark-yellow;
     }
 
     &.string,
@@ -262,7 +270,6 @@ atom-text-editor .search-results .marker.current-result .region,
 
   &.name.type {
     color: @white;
-    text-decoration: underline;
   }
 
   &.other.attribute-name.jsx {
