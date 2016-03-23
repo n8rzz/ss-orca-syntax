@@ -91,6 +91,10 @@ atom-text-editor .search-results .marker.current-result .region,
       color: @orange;
   }
 
+  &.operator.logical {
+      color: @blue
+  }
+
   &.other.special-method {
     color: @blue;
   }
@@ -116,6 +120,10 @@ atom-text-editor .search-results .marker.current-result .region,
 .support {
     &.class.builtin {
         color: @light-gray;
+    }
+
+    &.class.ruby {
+        color: @purple;
     }
 }
 .constant {
@@ -184,6 +192,10 @@ atom-text-editor .search-results .marker.current-result .region,
 
   &.unquoted {
       color: @bright-orange;
+  }
+
+  &.unquoted.yaml {
+      color: @light-gray;
   }
 
   &.regexp {
@@ -266,6 +278,7 @@ atom-text-editor .search-results .marker.current-result .region,
 
   &.name.tag.jsx {
       color: @light-gray;
+      text-decoration: none;
   }
 
   &.name.type {
@@ -290,6 +303,11 @@ atom-text-editor .search-results .marker.current-result .region,
   &.name.tag {
     color: @orange;
     text-decoration: underline;
+  }
+
+  &.name.tag.yaml {
+    color: @blue;
+    text-decoration: none;
   }
 
   &.other.attribute-name {
@@ -373,6 +391,10 @@ atom-text-editor .search-results .marker.current-result .region,
   &.heading {
     color: @green;
   }
+}
+
+.scroll-view {
+    padding-left: 5px;
 }
 
 atom-text-editor[mini] .scroll-view,
