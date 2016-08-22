@@ -117,6 +117,10 @@ atom-text-editor .search-results .marker.current-result .region,
     color: @blue;
 }
 
+.source.shell {
+    color: @orange;
+}
+
 .support {
     &.class.builtin {
         color: @light-gray;
@@ -124,6 +128,11 @@ atom-text-editor .search-results .marker.current-result .region,
 
     &.class.ruby {
         color: @purple;
+    }
+
+    &.component.open.jsx,
+    &.component.close.jsx {
+        color: @blue;
     }
 }
 .constant {
@@ -157,8 +166,9 @@ atom-text-editor .search-results .marker.current-result .region,
     color: darken(@bright-orange, 10%);
   }
 
-  &.parameter.function {
-    color: @syntax-text-color;
+  &.language.super.js {
+      color: @green;
+      font-weight: 600;
   }
 
   &.other.property {
@@ -171,6 +181,10 @@ atom-text-editor .search-results .marker.current-result .region,
 
   &.other.readwrite.js {
       color: @white;
+  }
+
+  &.parameter.function {
+    color: @syntax-text-color;
   }
 
   &.this.js {
