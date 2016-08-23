@@ -118,7 +118,7 @@ atom-text-editor .search-results .marker.current-result .region,
 }
 
 .source.shell {
-    color: @orange;
+    color: @dark-blue-green;
 }
 
 .support {
@@ -203,6 +203,10 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .string {
   color: @green;
+
+  &.quoted.double.shell {
+      color: @light-gray;
+  }
 
   &.unquoted {
       color: @bright-orange;
