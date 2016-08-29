@@ -102,6 +102,10 @@ atom-text-editor .search-results .marker.current-result .region,
   &.other.unit {
     color: @orange;
   }
+
+  &.other.using.cs {
+      color: @orange;
+  }
 }
 
 .storage {
@@ -115,7 +119,15 @@ atom-text-editor .search-results .marker.current-result .region,
 
 .storage.modifier {
     color: @blue;
+
+    &.cs {
+        color: @light-gray;
+    }
 }
+
+// .storage.type.cs {
+//     color: @light-gray;
+// }
 
 .source.shell {
     color: @dark-blue-green;
@@ -235,6 +247,14 @@ atom-text-editor .search-results .marker.current-result .region,
       color: @very-dark-yellow;
     }
 
+  &.definition.method-parameters,
+  &.seperator.parameter.cs {
+    &.begin.cs,
+    &.end.cs {
+        color: @white;
+    }
+  }
+
     &.string,
     &.variable,
     &.parameters,
@@ -303,6 +323,10 @@ atom-text-editor .search-results .marker.current-result .region,
     color: @white;
   }
 
+  &.entity.name.type.class.cs {
+      color: @light-yellow;
+  }
+
   &.other.attribute-name.jsx {
       color: @white;
   }
@@ -345,6 +369,18 @@ atom-text-editor .search-results .marker.current-result .region,
   &.link {
     color: @orange;
   }
+
+  &.meta.method-call.cs {
+    color: @blue;
+  }
+
+  // &.method.cs {
+  //   color: @blue;
+  // }
+
+  // &.property.cs {
+  //   color: @gray;
+  // }
 
   &.require {
     color: @blue;
